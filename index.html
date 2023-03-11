@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="PT-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="reset.css"> 
+        <link rel="stylesheet" href="style.css"> 
+        <title>Calculadora</title>
+    </head>
+    <body class="corpo"> 
+        <div class="calculadora">
+            <h1 class="titulo">CALCULADORA</h1>
+            <div class="caixa">
+                <div class="caixa__input">
+                    <h2 id="caixa_resultado"><h2>
+                    <button type="button" onclick="apagar()" id="apagarseta" class="botao">&leftarrow;</button>
+                    <button type="button" onclick="apagar_resultado()" class="botao operador">C</button>
+                </div>
+            </div>
+            <div class="apenas-numeros">
+                <div class="butoes">
+                    
+                    <button type="button" class="botao" onclick="inserirValor(7)">7</button>
+                    <button type="button" class="botao" onclick="inserirValor(8)">8</button>
+                    <button type="button" class="botao" onclick="inserirValor(9)">9</button>
+                    <button type="button" class="botao operador" onclick="inserirValor('+')">+</button>
+
+                </div>
+                <div class="butoes">
+                    <button type="button" class="botao" onclick="inserirValor(4)">4</button>
+                    <button type="button" class="botao" onclick="inserirValor(5)">5</button>
+                    <button type="button" class="botao" onclick="inserirValor(6)">6</button>
+                    <button type="button" class="botao operador" onclick="inserirValor('-')">-</button>
+
+                </div>
+                <div class="butoes">
+                    <button type="button" class="botao" onclick="inserirValor(1)">1</button>
+                    <button type="button" class="botao" onclick="inserirValor(2)">2</button>
+                    <button type="button" class="botao" onclick="inserirValor(3)">3</button>
+                    <button type="button" class="botao operador" onclick="inserirValor('*')">x</button>
+
+                </div>
+                <div class="ult-Linha">
+                    <button type="button" class="botao" id="o" onclick="inserirValor(0)">0</button>
+                    <button type="button" class="botao" onclick="inserirValor('.')">.</button>
+                    <button type="button" class="botao operador" onclick="efetuarIgualdade()">=</button>
+                    <button type="button" class="botao operador" onclick="inserirValor('/')">/</button>
+                </div>
+        </div>
+    <script src="script.js"></script>
+    </body>
+</html>
