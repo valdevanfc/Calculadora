@@ -15,6 +15,6 @@ function apagar() {
 function efetuarIgualdade() {
     const valor = document.getElementById('caixa_resultado').innerHTML;
     if (valor) {
-        document.getElementById('caixa_resultado').innerHTML = eval(valor);
+        document.getElementById('caixa_resultado').innerHTML = eval(valor).toFixed(2);
     }
 }
